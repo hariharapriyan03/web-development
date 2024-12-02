@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Professional Resume Creator</title>
+</head>
+<body>
+    <div class="banner">
+        <video autoplay muted loop>
+           <source src="videoplayback2.mp4" type="video/mp4">
+        </video>
+    <div class="container">
+        <h1>Professional Resume Creator</h1>
+        <form id="resumeForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="summary">Profile Summary:</label>
+                <textarea id="summary" required></textarea>
+            </div>
+            <div class="form-group">
+                <label>Education:</label>
+                <div id="educationContainer"></div>
+                <button type="button" id="addEducation">Add Education</button>
+            </div>
+            <div class="form-group">
+                <label>Skills:</label>
+                <div id="skillsContainer">
+                    <label><input type="checkbox" value="JavaScript"> JavaScript</label>
+                    <label><input type="checkbox" value="HTML"> HTML</label>
+                    <label><input type="checkbox" value="CSS"> CSS</label>
+                    <label><input type="checkbox" value="Python"> Python</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Experience:</label>
+                <div id="experienceContainer"></div>
+                <button type="button" id="addExperience">Add Experience</button>
+            </div>
+            <button type="submit">Submit</button>
+            <button type="button" id="clearForm">Clear Form</button>
+        </form>
+
+        <div id="resumePreview" class="resume-preview">
+            <h2>Resume Preview</h2>
+            <div id="previewContent"></div>
+        </div>
+    </div>
+    </div>
+    <div>
+    <script src="script.js"></script>
+    </div> 
+</body>
+</html>
